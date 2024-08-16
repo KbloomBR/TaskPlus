@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato</title>
+    <link rel="stylesheet" href="/css/stylecont.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu-container">
+        <div class="menu-buttons">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="contrato.html">Contratar</a></li>
+                    <li><a href="portifolio.html">Portifólio</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="img" id="container">
+        <div>
+            <h1 id="text">aqui será o texto</h1>
+            <img class="imagem" src="/images/acordaian.jpeg" width="300" height="300" >
+        </div>
+    </main>
+    <br/> 
+    <header class="menu-container2">
+        <div class="menu-buttons">
+            <nav class="main-menu">
+                <ul>
+                    <li><a id="botaoVoltar">Voltar</a></li>
+                    <li><a id="botaoProximo">Próximo</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <script src="/javascript/slideshow.js"></script>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '1') {
+                window.location.href = 'index.html';
+            } else if (event.key === '2') {
+                window.location.href = 'contrato.html';
+            } else if (event.key === '3') {
+                window.location.href = 'portifolio.html';
+            } else if (event.key === '4') {
+                window.location.href = 'cadastro.html';
+            }
+        });
+    </script>
+</body>
+</html>
